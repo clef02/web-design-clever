@@ -1,0 +1,23 @@
+{
+  "name": "web-design-clever",
+  "version": "1.0.0",
+  "description": "Skill de diseño web inteligente: entiende qué es el proyecto y para qué, descubre al cliente potencial, analiza UX/UI con heurísticas, y diseña componentes, animaciones, accesibilidad e iconografía con Tailwind, shadcn/ui, GSAP y Lighthouse.",
+  "author": {
+    "name": "clef02"
+  },
+  "homepage": "https://github.com/clef02/web-design-clever",
+  "repository": "https://github.com/clef02/web-design-clever",
+  "license": "MIT",
+  "keywords": [
+    "web-design",
+    "ux",
+    "ui",
+    "tailwind",
+    "shadcn",
+    "gsap",
+    "accessibility",
+    "lighthouse",
+    "claude-code",
+    "skill"
+  ]
+}
