@@ -1,0 +1,28 @@
+{
+  "name": "web-design-clever",
+  "owner": {
+    "name": "clef02"
+  },
+  "metadata": {
+    "description": "Marketplace de Claude Code con la skill web-design-clever para diseño web UX/UI."
+  },
+  "plugins": [
+    {
+      "name": "web-design-clever",
+      "source": "./",
+      "description": "Skill de diseño web inteligente: entiende qué es el proyecto y para qué, descubre al cliente potencial, analiza UX/UI con heurísticas, y diseña componentes, animaciones, accesibilidad e iconografía con Tailwind, shadcn/ui, GSAP y Lighthouse.",
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": [
+        "web-design",
+        "ux",
+        "ui",
+        "tailwind",
+        "shadcn",
+        "gsap",
+        "accessibility",
+        "lighthouse"
+      ]
+    }
+  ]
+}
