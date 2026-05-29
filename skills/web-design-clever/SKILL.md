@@ -24,16 +24,19 @@ Principios rectores:
 - **El diseño se adapta al sector** del negocio (no una plantilla universal).
 - Priorizar a la vez **estética + usabilidad + conversión**.
 - Pensar como una **agencia creativa premium**: diseñar **experiencias, no simples páginas**.
+- **NO diseñes como un desarrollador frontend.** Diseña como un **director creativo** que concibe la experiencia y luego la entrega a un equipo de desarrollo.
+- **Orden de prioridades:** primero **impresiona** → luego **organiza** → finalmente **convierte**.
 
 ### 🚫 Nunca generar
 - Landing pages genéricas.
-- El cliché "Hero + Servicios + Testimonios + Contacto" sin creatividad.
+- **Estructura por defecto prohibida:** no usar automáticamente el patrón **Hero · Servicios · Beneficios · Testimonios · FAQ · Contacto**. La arquitectura nace del **comportamiento del usuario + el concepto creativo**, no de una plantilla.
 - Cards repetitivas o componentes aburridos.
 - Diseños tipo Bootstrap / plantilla.
 - Secciones copiadas entre proyectos.
 
 ### 💡 Inspiración (referentes de nivel)
-Awwwards · CSS Design Awards · Vercel · Stripe · Linear · Framer · Apple · Notion · Webflow Showcase.
+Cuberto · Active Theory · Locomotive · Dogstudio · Resn · Bruno Simon · Vercel · Stripe · Linear · Apple · ganadores de **Awwwards**.
+**Nunca** inspirarse en plantillas de ThemeForest.
 
 ## Herramientas preferidas (stack por defecto)
 
@@ -134,15 +137,21 @@ Una **idea central** que gobierne TODO el diseño, en una frase. Ej: *"un búnke
 Elegir un rumbo claro (combinar con criterio): **Minimalista · Futurista · Editorial · Corporativa · Tecnológica · Elegante · Premium · Moderna · Experimental.**
 
 ### 3.3 Sistema visual (declararlo)
-- **Tipografía:** combinación moderna de fuentes, jerarquía clara, títulos grandes, **alto impacto visual**.
+- **Tipografía = elemento visual PRINCIPAL** (no solo informativa). Usar: **títulos gigantes · contrastes extremos · palabras destacadas · bloques editoriales · composiciones tipográficas experimentales.** El texto compone, no solo informa.
 - **Colores:** paleta tomada de la referencia.
 - **Espaciado · Grid · Componentes · Animaciones:** definidos como sistema coherente (tokens).
 
 ### 3.4 Principios de layout (huir de lo genérico)
-**Asimetría controlada · Bento grid · secciones dinámicas · espacios negativos · composición editorial · diseño modular.** Nada de rejillas planas y repetitivas tipo plantilla.
+Base: **asimetría controlada · espacios negativos · composición editorial · diseño modular.**
+
+Usar con frecuencia: **Editorial Layouts · Broken Grids · Split Screens · Floating Panels · Layered Interfaces · Bento Systems · Storytelling Sections · Oversized Typography · Experimental Navigation · Scroll Driven Experiences.**
+
+Nada de rejillas planas y repetitivas tipo plantilla.
 
 ### 3.5 Estructura de la página (wireframe textual)
-Entregar un **esquema de secciones en orden** (wireframe en texto), basado en la referencia visual, el concepto creativo y lo esencial — nada de relleno. Por cada sección, una línea: qué contiene y para qué sirve. Ejemplo:
+**La arquitectura nace del comportamiento del usuario y del concepto creativo — NO de una estructura por defecto.** Prohibido el patrón automático Hero · Servicios · Beneficios · Testimonios · FAQ · Contacto: cada sección debe existir porque el recorrido del usuario y el concepto la justifican.
+
+Entregar un **esquema de secciones en orden** (wireframe en texto), basado en la referencia visual, el concepto creativo y lo esencial — nada de relleno. Por cada sección, una línea: qué contiene y para qué sirve. Ejemplo (ilustrativo, NO una plantilla a copiar):
 
 ```
 1. Nav        — logo + 2-3 links + CTA "Agendar visita"
