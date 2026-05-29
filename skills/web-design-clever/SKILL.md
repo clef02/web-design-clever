@@ -7,11 +7,33 @@ description: Diseño web inteligente y empaquetable para cualquier tipo de proye
 
 Skill **portable y autocontenida** para diseñar y analizar interfaces web centradas en el cliente y en negocio — no solo "bonitas". Sirve para cualquier proyecto: landing, web corporativa, app, dashboard o design system.
 
-Flujo: **referencia visual → entender el proyecto → entender al cliente → analizar UX/UI → PROPONER ESTRUCTURA Y ESPERAR APROBACIÓN → diseño (componentes → animación → accesibilidad → iconos).** No saltarse las fases de entendimiento ni la aprobación de estructura: sin ellas el diseño es decoración sin rumbo.
+Flujo: **referencia visual → entender el proyecto → entender al cliente → analizar UX/UI → DIRECCIÓN CREATIVA + ESTRUCTURA (esperar aprobación) → diseño (componentes únicos → animación → accesibilidad → iconos).** No saltarse las fases de entendimiento ni la aprobación: sin ellas el diseño es decoración sin rumbo. Estándar de salida: **nivel agencia premium**, no plantilla.
 
 > ⚠️ **Dos reglas que NO se saltan:**
 > 1. **Punto de partida = referencia visual.** Antes de proponer nada, pedir (o usar) la **imagen de referencia** que el usuario aporta y diseñar tomándola como base de estilo y layout.
 > 2. **Estructura primero, aprobación después.** Presentar la **estructura de la página** (esquema de secciones, en orden) y **esperar el OK explícito** del usuario ANTES de escribir una sola línea de código o diseño.
+
+---
+
+## 🎨 Filosofía de diseño — nivel agencia premium
+
+**Estándar de calidad innegociable: cada diseño debe parecer creado por una agencia de $10,000+ USD, no por una plantilla descargada.**
+
+Principios rectores:
+- **Identidad propia en cada proyecto** — nada se copia entre proyectos.
+- **El diseño se adapta al sector** del negocio (no una plantilla universal).
+- Priorizar a la vez **estética + usabilidad + conversión**.
+- Pensar como una **agencia creativa premium**: diseñar **experiencias, no simples páginas**.
+
+### 🚫 Nunca generar
+- Landing pages genéricas.
+- El cliché "Hero + Servicios + Testimonios + Contacto" sin creatividad.
+- Cards repetitivas o componentes aburridos.
+- Diseños tipo Bootstrap / plantilla.
+- Secciones copiadas entre proyectos.
+
+### 💡 Inspiración (referentes de nivel)
+Awwwards · CSS Design Awards · Vercel · Stripe · Linear · Framer · Apple · Notion · Webflow Showcase.
 
 ## Herramientas preferidas (stack por defecto)
 
@@ -42,10 +64,12 @@ Antes que nada, saber **qué se está construyendo y por qué existe**. Si no es
 2. **¿Para QUÉ es? (objetivo de negocio)** — vender, captar leads, informar, fidelizar, dar soporte, posicionar marca.
 3. **¿Qué éxito busca?** — la métrica que importa: conversiones, registros, tiempo en página, ventas, retención.
 4. **¿Qué alcance / restricciones?** — plazos, presupuesto, marca existente, contenido disponible, SEO, idiomas.
-5. **¿Qué tono de marca?** — serio, juvenil, premium, técnico, cercano.
+5. **¿Qué tono / personalidad de marca?** — serio, juvenil, premium, técnico, cercano, atrevido.
+6. **¿Quién es la competencia?** — qué hacen y cómo diferenciarse (no parecerse).
+7. **¿Qué nivel de sofisticación visual?** — desde sobrio-funcional hasta experimental-premium.
 
 **Entregable:**
-> *"Este proyecto es un **[tipo]** cuyo objetivo es **[para qué]**, mide éxito por **[métrica]**, con tono **[marca]** y estas restricciones: **[…]**."*
+> *"Este proyecto es un **[tipo]** cuyo objetivo es **[para qué]**, mide éxito por **[métrica]**, con personalidad **[marca]**, frente a **[competencia]**, con un nivel visual **[sofisticación]** y estas restricciones: **[…]**."*
 
 ---
 
@@ -99,11 +123,26 @@ Aplica tanto para **auditar** algo existente como para **validar** lo que se va 
 
 ---
 
-## Fase 3 — Estructura de la página (PROPONER y ESPERAR APROBACIÓN) · obligatorio
+## Fase 3 — Dirección creativa + estructura (PROPONER y ESPERAR APROBACIÓN) · obligatorio
 
-**Antes de diseñar o escribir código, presentar la estructura de la página y esperar el OK del usuario.**
+**Antes de diseñar o escribir código, definir la dirección creativa y presentar la estructura — y esperar el OK del usuario.**
 
-Entregar un **esquema de secciones en orden** (wireframe en texto), basado en la referencia visual y en lo esencial — nada de relleno. Por cada sección, una línea: qué contiene y para qué sirve. Ejemplo:
+### 3.1 Concepto creativo
+Una **idea central** que gobierne TODO el diseño, en una frase. Ej: *"un búnker digital"*, *"precisión quirúrgica"*, *"el lujo de lo simple"*. Sin concepto, no hay identidad.
+
+### 3.2 Dirección artística
+Elegir un rumbo claro (combinar con criterio): **Minimalista · Futurista · Editorial · Corporativa · Tecnológica · Elegante · Premium · Moderna · Experimental.**
+
+### 3.3 Sistema visual (declararlo)
+- **Tipografía:** combinación moderna de fuentes, jerarquía clara, títulos grandes, **alto impacto visual**.
+- **Colores:** paleta tomada de la referencia.
+- **Espaciado · Grid · Componentes · Animaciones:** definidos como sistema coherente (tokens).
+
+### 3.4 Principios de layout (huir de lo genérico)
+**Asimetría controlada · Bento grid · secciones dinámicas · espacios negativos · composición editorial · diseño modular.** Nada de rejillas planas y repetitivas tipo plantilla.
+
+### 3.5 Estructura de la página (wireframe textual)
+Entregar un **esquema de secciones en orden** (wireframe en texto), basado en la referencia visual, el concepto creativo y lo esencial — nada de relleno. Por cada sección, una línea: qué contiene y para qué sirve. Ejemplo:
 
 ```
 1. Nav        — logo + 2-3 links + CTA "Agendar visita"
@@ -122,10 +161,10 @@ Reglas de la estructura:
 ➡️ **Terminar preguntando:** *"¿Te parece bien esta estructura o ajusto algo antes de diseñar?"* y **no avanzar** hasta recibir aprobación.
 
 ### Tras la aprobación — bases visuales
-- Layout **mobile-first**. Breakpoints Tailwind: `sm md lg xl 2xl`.
+- **Diseñar las 3 vistas con intención, no solo adaptar:** **Desktop Premium → Tablet → Mobile.** Cada breakpoint es una composición pensada, no un encogimiento. Breakpoints Tailwind: `sm md lg xl 2xl`.
 - Espaciado con la escala de Tailwind (`gap-`, `space-y-`, `p-`, `m-`) — consistencia, sin valores arbitrarios salvo necesidad real.
-- Tipografía: máx. 2 familias, escala clara (`text-sm` … `text-5xl`), jerarquía evidente.
-- Paleta y estilo tomados de la **imagen de referencia**.
+- Tipografía: combinación moderna, jerarquía clara, títulos grandes de alto impacto.
+- Paleta y estilo tomados de la **imagen de referencia** y del concepto creativo.
 
 ---
 
@@ -135,7 +174,10 @@ Reglas de la estructura:
 - Componentes pequeños, una responsabilidad, props tipadas (TypeScript).
 - Variantes con **cva** + **clsx** + **tailwind-merge** (lo que shadcn ya trae), no copy-paste.
 - Estados explícitos: `default`, `hover`, `focus-visible`, `active`, `disabled`, `loading`, `error`, `empty`.
-- Reutilizar lo que ya exista en el repo antes de crear algo nuevo.
+- **Dentro del proyecto:** reutilizar lo que ya exista antes de crear algo nuevo (DRY).
+- **Entre proyectos:** NUNCA reutilizar el mismo patrón visual. **Diseñar componentes únicos** para cada proyecto.
+
+**Componentes a diseñar con identidad propia** (no plantilla): estadísticas, timeline, galerías, FAQs, servicios, casos de éxito, dashboards, testimonios. Cada uno con una solución visual pensada para *este* proyecto.
 
 ```tsx
 import { cn } from '@/lib/utils'; // helper de shadcn (clsx + tailwind-merge)
@@ -169,7 +211,9 @@ export function Button({ variant, size, className, ...props }: ButtonProps) {
 
 ## Fase 5 — Animaciones (Tailwind para simple · GSAP para complejo)
 
-**Animar dirige la atención y da feedback; no decora porque sí.** Sutil > llamativo.
+**Animar dirige la atención y da feedback; no decora porque sí.** Sutil > llamativo, pero con **motion design elegante** de nivel agencia.
+
+**Incluir según el proyecto:** scroll reveal · fade transitions · microinteracciones · hover effects · loading states · motion design coreografiado.
 
 ### Simple → Tailwind / CSS
 Microinteracciones: `transition`, `duration-200`, `ease-out`, `hover:scale-105`, `animate-pulse`. Animar `transform` y `opacity` (no `width`/`height`/`top`) para 60fps.
@@ -280,13 +324,16 @@ No depende de rutas ni nombres de un proyecto concreto → funciona en cualquier
 
 ## Salida esperada
 
-1. Confirmación de la **imagen de referencia** como base.
-2. Qué es el proyecto y para qué (Fase 0).
-3. Resumen del cliente potencial (Fase 1).
-4. Análisis UX/UI con hallazgos priorizados (Fase 2).
-5. **Estructura de la página propuesta + aprobación del usuario** (Fase 3) — antes de diseñar.
-6. Componentes Tailwind + shadcn/ui, accesibles, con estados y **solo lo esencial**.
-7. Animaciones: Tailwind para micro, GSAP para complejo/scroll/3D, con `prefers-reduced-motion`.
-8. Accesibilidad verificable con Lighthouse e iconografía coherente.
+Siempre entregar:
+1. **Concepto creativo** (la idea central).
+2. **Arquitectura / dirección visual** (dirección artística + sistema visual).
+3. **Wireframe textual** de la estructura + aprobación del usuario (Fase 3) — antes de diseñar.
+4. **Sistema de diseño** (tipografía, color, espaciado, grid, tokens).
+5. **Componentes personalizados** (únicos para el proyecto, con estados).
+6. **Código completo**, accesible (Lighthouse) y con animaciones (`prefers-reduced-motion`).
+
+Más el contexto previo: imagen de referencia confirmada, entendimiento del proyecto (Fase 0) y del cliente (Fase 1), y análisis UX/UI (Fase 2).
+
+**Nivel de calidad:** cada entrega debe sentirse de **agencia premium ($10,000+)**, con identidad propia y adaptada al sector — nunca una plantilla genérica.
 
 Mantener el tono y los comentarios en el idioma del usuario.
