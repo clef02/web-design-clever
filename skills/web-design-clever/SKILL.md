@@ -7,7 +7,11 @@ description: Diseño web inteligente y empaquetable para cualquier tipo de proye
 
 Skill **portable y autocontenida** para diseñar y analizar interfaces web centradas en el cliente y en negocio — no solo "bonitas". Sirve para cualquier proyecto: landing, web corporativa, app, dashboard o design system.
 
-Flujo: **entender el proyecto → entender al cliente → analizar UX/UI → estructura → componentes → animación → accesibilidad → iconos.** No saltarse las fases de entendimiento: sin ellas el diseño es decoración sin rumbo.
+Flujo: **referencia visual → entender el proyecto → entender al cliente → analizar UX/UI → PROPONER ESTRUCTURA Y ESPERAR APROBACIÓN → diseño (componentes → animación → accesibilidad → iconos).** No saltarse las fases de entendimiento ni la aprobación de estructura: sin ellas el diseño es decoración sin rumbo.
+
+> ⚠️ **Dos reglas que NO se saltan:**
+> 1. **Punto de partida = referencia visual.** Antes de proponer nada, pedir (o usar) la **imagen de referencia** que el usuario aporta y diseñar tomándola como base de estilo y layout.
+> 2. **Estructura primero, aprobación después.** Presentar la **estructura de la página** (esquema de secciones, en orden) y **esperar el OK explícito** del usuario ANTES de escribir una sola línea de código o diseño.
 
 ## Herramientas preferidas (stack por defecto)
 
@@ -22,11 +26,17 @@ Flujo: **entender el proyecto → entender al cliente → analizar UX/UI → est
 
 **Regla de oro:** si el proyecto YA usa otra librería/stack, adaptarse a esa. La skill prefiere estas herramientas pero no las impone si rompen la coherencia del repo.
 
+**Menos es más:** priorizar **solo lo esencial**. Evitar el exceso de cards, secciones e información redundante. Cada elemento debe ganarse su lugar: si no sirve al objetivo o al CTA, fuera. Una página limpia convierte más que una saturada.
+
+**Referencia visual:** el diseño parte de la **imagen de referencia** que aporta el usuario (estilo, paleta, layout, tono). Si no la dio, pedirla antes de proponer la estructura.
+
 ---
 
 ## Fase 0 — Entender el proyecto (qué es y para qué) · NO saltarse
 
 Antes que nada, saber **qué se está construyendo y por qué existe**. Si no está claro, **preguntar** al usuario lo mínimo crítico.
+
+0. **¿Hay imagen de referencia?** — pedir/usar la referencia visual del usuario como base de estilo y layout. Si no existe, solicitarla antes de continuar.
 
 1. **¿Qué ES el proyecto?** — tipo: landing, e-commerce, SaaS/app, web corporativa, portfolio, dashboard, design system…
 2. **¿Para QUÉ es? (objetivo de negocio)** — vender, captar leads, informar, fidelizar, dar soporte, posicionar marca.
@@ -89,13 +99,33 @@ Aplica tanto para **auditar** algo existente como para **validar** lo que se va 
 
 ---
 
-## Fase 3 — Estructura y jerarquía
+## Fase 3 — Estructura de la página (PROPONER y ESPERAR APROBACIÓN) · obligatorio
 
-- Definir el **flujo del usuario** y la jerarquía visual: qué ve primero, segundo, tercero.
-- **CTA dominante**: contraste, tamaño y posición lo destacan sobre todo lo demás.
+**Antes de diseñar o escribir código, presentar la estructura de la página y esperar el OK del usuario.**
+
+Entregar un **esquema de secciones en orden** (wireframe en texto), basado en la referencia visual y en lo esencial — nada de relleno. Por cada sección, una línea: qué contiene y para qué sirve. Ejemplo:
+
+```
+1. Nav        — logo + 2-3 links + CTA "Agendar visita"
+2. Hero       — titular + subtítulo + CTA + visual de referencia
+3. [sección]  — …
+4. Contacto   — formulario / CTA final
+5. Footer     — datos + enlaces mínimos
+```
+
+Reglas de la estructura:
+- **Solo lo esencial.** Menos secciones, menos cards. Cada bloque justifica su existencia o se elimina.
+- **Un CTA dominante** por pantalla, repetido en puntos clave.
+- Jerarquía clara: qué ve el usuario primero, segundo, tercero.
+- Mobile-first.
+
+➡️ **Terminar preguntando:** *"¿Te parece bien esta estructura o ajusto algo antes de diseñar?"* y **no avanzar** hasta recibir aprobación.
+
+### Tras la aprobación — bases visuales
 - Layout **mobile-first**. Breakpoints Tailwind: `sm md lg xl 2xl`.
 - Espaciado con la escala de Tailwind (`gap-`, `space-y-`, `p-`, `m-`) — consistencia, sin valores arbitrarios salvo necesidad real.
 - Tipografía: máx. 2 familias, escala clara (`text-sm` … `text-5xl`), jerarquía evidente.
+- Paleta y estilo tomados de la **imagen de referencia**.
 
 ---
 
@@ -250,12 +280,13 @@ No depende de rutas ni nombres de un proyecto concreto → funciona en cualquier
 
 ## Salida esperada
 
-1. Qué es el proyecto y para qué (Fase 0).
-2. Resumen del cliente potencial (Fase 1).
-3. Análisis UX/UI con hallazgos priorizados (Fase 2).
-4. Estructura/jerarquía con CTA dominante.
-5. Componentes Tailwind + shadcn/ui, accesibles y con estados.
-6. Animaciones: Tailwind para micro, GSAP para complejo/scroll/3D, con `prefers-reduced-motion`.
-7. Accesibilidad verificable con Lighthouse e iconografía coherente.
+1. Confirmación de la **imagen de referencia** como base.
+2. Qué es el proyecto y para qué (Fase 0).
+3. Resumen del cliente potencial (Fase 1).
+4. Análisis UX/UI con hallazgos priorizados (Fase 2).
+5. **Estructura de la página propuesta + aprobación del usuario** (Fase 3) — antes de diseñar.
+6. Componentes Tailwind + shadcn/ui, accesibles, con estados y **solo lo esencial**.
+7. Animaciones: Tailwind para micro, GSAP para complejo/scroll/3D, con `prefers-reduced-motion`.
+8. Accesibilidad verificable con Lighthouse e iconografía coherente.
 
 Mantener el tono y los comentarios en el idioma del usuario.
