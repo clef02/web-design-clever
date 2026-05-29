@@ -36,8 +36,12 @@ Sigue un flujo en fases:
 ```bash
 # En Claude Code
 /plugin marketplace add clef02/web-design-clever
-/plugin install web-design-clever
+/plugin install web-design-clever@web-design-clever
 ```
+
+> El formato es `plugin@marketplace`. Como el plugin y el marketplace
+> comparten nombre, queda `web-design-clever@web-design-clever`.
+> Una vez instalado, invoca la skill con `/web-design-clever`.
 
 ### Manual (copiar la skill)
 
